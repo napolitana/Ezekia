@@ -1,0 +1,57 @@
+@import './reset';
+@import './mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+// fonts
+$primary-font: 'Nunito', sans-serif;
+$secondary-font: 'Bebas Neue', cursive;
+
+// colors
+$background-color: #121315;
+
+$dark-grey: #283032;
+$grey: #b1afaf;
+$light-grey: #eee;
+
+$primary-color: #2986fa;
+// $secondary-color: #6189c7;
+$secondary-color: #fa2964;
+
+$link-color: #2986fa;
+
+$badge-color: #fab11c;
+
+.separator {
+  opacity: 0.2;
+}
+
+.container {
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  padding-top: 30px;
+
+  width: 100%;
+
+  @include breakpoint(mobile) {
+    flex-wrap: wrap;
+  }
+
+  @include breakpoint(phablet) {
+    width: 750px;
+  }
+
+  @include breakpoint(tablet) {
+    width: 970px;
+  }
+
+  @include breakpoint(laptop) {
+    width: 1170px;
+  }
+}
